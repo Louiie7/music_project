@@ -5,11 +5,12 @@ import time
 import numpy as np
 
 
-
+client_id = ""
+client_secret = ""
 
 scope = "user-library-read"
 "%"
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="3f176acfe7fd45e29625b17cedd3bfc9",client_secret="767c7c6b05a847848e8e2482af957d77"))
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,client_secret=client_secret))
 
 def getUniqueGenreList(genre_list):
     unique_genres = list(set(genre_list))
