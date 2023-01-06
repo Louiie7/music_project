@@ -1,1 +1,4 @@
-data/
+data
+labels.xlsx
+plots
+__pychache__
